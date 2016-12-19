@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RelativeLayout
+                android:id="@+id/ll_head"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="User"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp" />
+                <ImageButton
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imv_option"
+                    android:src="@drawable/icoption"
+                    android:scaleType="fitCenter"
+                    android:background="@color/cardview_light_background"
+                    />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_head"
+                android:layout_marginBottom="5dp"
+                android:text="time" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_location"
+                android:layout_below="@+id/tv_time"
+                android:layout_marginBottom="5dp"
+
+                />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imv_photo"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sample" />
+
+    </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Content display here!" />
+
+        <View
+            style="@style/Divider"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imv_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yellowstar"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:id="@+id/tv_starCount"
+                        android:textSize="20dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_cmt"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:background="@color/cardview_light_background"-->
+                    <!--android:text="CMT" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/cardview_light_background"
+                    android:src="@drawable/share" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="?attr/actionBarSize">
+<ImageView
+    android:id="@+id/my_imageview"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_centerVertical="true"
+    android:src="@android:drawable/ic_delete"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/send"/>
+</RelativeLayout>

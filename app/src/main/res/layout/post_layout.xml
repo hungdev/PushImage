@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_location"
+            android:visibility="gone"
+            android:hint="Address:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="12"
+            android:maxLines="12"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:hint="Share your content"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/imv_photo"
+            android:src="@drawable/firebase_lockup_400"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        >
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/imb_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/keyboard"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/imv_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emoticon"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/imb_takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/imb_choosephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/imb_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/imb_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sharepost"
+            />
+    </LinearLayout>
+</LinearLayout>
